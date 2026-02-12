@@ -10,11 +10,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-200 shadow-sm z-50">
-      <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img src={logo} className="w-8 h-8" />
-          <span className="font-semibold text-secondary">
+    <nav className="fixed top-0 w-full bg-gray-200 shadow-sm z-50 h-16">
+      <div className="max-w-7xl mx-auto px-8 h-full flex items-center justify-center relative">
+        <div className="flex items-center gap-3 absolute left-8">
+          <img src={logo} className="w-12 h-12" />
+          <span className="font-bold text-secondary">
             Edge Robotics Studio
           </span>
         </div>
