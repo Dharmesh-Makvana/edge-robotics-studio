@@ -12,6 +12,8 @@ export default {
           hover: "#0284c7",
         },
         secondary: "#0f172a",
+        background: "#0f172a",
+        surface: "#1e293b",
       },
     },
   },
