@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaYoutube, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
@@ -17,20 +18,17 @@ const Footer = () => {
                 <div>
                     <h4 className="text-white font-semibold mb-6">Company</h4>
                     <ul className="space-y-3 text-sm">
-                        <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
-                        <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-                        <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
+                        <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+                        <li><Link to="/blog" className="hover:text-primary transition-colors">Blog</Link></li>
+                        <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 className="text-white font-semibold mb-6">Resources</h4>
-                    <ul className="space-y-3 text-sm">
-                        <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
-                        <li><a href="#" className="hover:text-primary transition-colors">Community</a></li>
-                        <li><a href="#" className="hover:text-primary transition-colors">Open Source</a></li>
-                    </ul>
+                    <h4 className="text-white font-semibold mb-6">Careers</h4>
+                    <p className="text-sm text-slate-400 leading-relaxed">
+                        We are looking for interns and volunteers who can help us build Edge Robotics Studio.
+                    </p>
                 </div>
 
                 <div>

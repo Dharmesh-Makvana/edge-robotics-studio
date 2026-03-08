@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
+  const location = useLocation();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 30) {
@@ -15,12 +18,15 @@ const Navbar = () => {
   });
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "Projects", href: "#projects" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Projects", href: "/projects" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
   ];
+
+
 
   return (
     <motion.nav
@@ -30,22 +36,28 @@ const Navbar = () => {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="fixed top-0 w-full bg-transparent z-50 h-16"
+      className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50 h-16 border-b border-slate-800"
     >
       <div className="max-w-7xl mx-auto px-8 h-full flex items-center justify-center relative">
         <div className="flex items-center gap-3 absolute left-8">
-          <img src={logo} className="w-12 h-12" />
-          <span className="font-bold text-white">
-            Edge Robotics Studio
-          </span>
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} className="w-10 h-10" alt="Logo" />
+            <span className="font-bold text-white hidden md:block">
+              Edge Robotics Studio
+            </span>
+          </Link>
         </div>
 
         <ul className="flex gap-8 text-gray-300">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="hover:text-primary transition-colors">
+              <Link
+                to={link.href}
+                className={`transition-colors hover:text-primary ${location.pathname === link.href ? "text-primary font-medium" : ""
+                  }`}
+              >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
