@@ -1,5 +1,4 @@
 import thumbnailImage from "../assets/thumbnail.png";
-import aboutImage from "../assets/about.jpg";
 import vacationImage from "../assets/vacation.jpeg";
 
 export const blogPosts = [

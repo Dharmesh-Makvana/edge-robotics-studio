@@ -54,7 +54,7 @@ const Contact = () => {
             params.append('message', formData.message);
             params.append('token', token);
 
-            const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+            await fetch(GOOGLE_APPS_SCRIPT_URL, {
                 method: "POST",
                 mode: "no-cors", // Use no-cors to bypass the redirect issues
                 body: params,
@@ -250,6 +250,12 @@ const Contact = () => {
                                 {status === "submitting" ? "Sending..." : "Send Message"}
                                 {status !== "submitting" && <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
                             </button>
+
+                            <p className="text-[10px] text-gray-500 text-center mt-4">
+                                This site is protected by reCAPTCHA and the Google{' '}
+                                <a href="https://policies.google.com/privacy" className="underline hover:text-primary transition-colors">Privacy Policy</a> and{' '}
+                                <a href="https://policies.google.com/terms" className="underline hover:text-primary transition-colors">Terms of Service</a> apply.
+                            </p>
                         </form>
                     </motion.div>
                 </div>

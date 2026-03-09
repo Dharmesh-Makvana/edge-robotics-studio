@@ -6,11 +6,34 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edge Robotics Studio</title>
+  <style>
+    /* Final resort to hide the floating reCAPTCHA badge */
+    .grecaptcha-badge {
+      visibility: hidden !important;
+      display: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  </style>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    // Robustly hide the reCAPTCHA badge if CSS fails to override injected styles
+    (function () {
+      setInterval(function () {
+        var badge = document.querySelector('.grecaptcha-badge');
+        if (badge) {
+          badge.style.visibility = 'hidden';
+          badge.style.display = 'none';
+          badge.style.opacity = '0';
+          badge.style.pointerEvents = 'none';
+        }
+      }, 500);
+    })();
+  </script>
 </body>
 
 </html>
