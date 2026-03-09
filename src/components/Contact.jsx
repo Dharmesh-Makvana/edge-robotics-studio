@@ -54,11 +54,13 @@ const Contact = () => {
             params.append('message', formData.message);
             params.append('token', token);
 
-            await fetch(GOOGLE_APPS_SCRIPT_URL, {
+            const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
                 method: "POST",
                 mode: "no-cors", // Use no-cors to bypass the redirect issues
                 body: params,
             });
+
+            console.log("Fetch call completed:", response);
 
             // Note: With no-cors, we cannot read the response body.
             // We assume success if the fetch doesn't throw.
@@ -67,7 +69,9 @@ const Contact = () => {
 
         } catch (error) {
             setStatus("error");
-            console.error("Submission failed:", error);
+            console.error("Submission failed at:", new Date().toLocaleTimeString());
+            console.error("Error details:", error);
+            if (error.message) console.error("Error message:", error.message);
         }
     };
     const contactInfo = [
