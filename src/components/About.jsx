@@ -15,7 +15,7 @@ const About = () => {
                         <div className="relative z-10">
                             <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">About</span>{" "}
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Me</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">the Founder</span>
                             </h1>
                             <p className="text-xl text-primary font-medium mb-8">
                                 I’m Dharmesh Makvana, a freelance roboticist.
