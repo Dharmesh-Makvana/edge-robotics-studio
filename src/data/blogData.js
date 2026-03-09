@@ -13,6 +13,10 @@ export const blogPosts = [
         coverImage: thumbnailImage,
         content: [
             {
+                type: "paragraph",
+                text: "Hi, I am Dharmesh Makvana, the founder and lead robotics engineer at Edge Robotics Studio. I've spent the past several years delving deep into robotics design, embedded systems, and automation software. This blog is a place for me to share my journey—from the technical hurdles of building robotic systems to the personal reflections along the way."
+            },
+            {
                 type: "heading",
                 text: "A Bit About Me"
             },
