@@ -14,6 +14,18 @@
   <meta name="keywords"
     content="Edge Robotics Studio, Robotics, ROS2, Embedded Systems, Computer Vision, AI, Automation, Gazebo, Simulation, PCB Design" />
   <meta name="author" content="Dharmesh Makvana" />
+  <link id="canonical-link" rel="canonical" href="https://edgeroboticsstudio.com/" />
+  <script>
+    (function() {
+      var canonical = document.getElementById('canonical-link');
+      var path = window.location.pathname;
+      // Remove trailing slash if present (except for root)
+      if (path.length > 1 && path.endsWith('/')) {
+        path = path.slice(0, -1);
+      }
+      canonical.setAttribute('href', 'https://edgeroboticsstudio.com' + path);
+    })();
+  </script>
   <style>
     /* Final resort to hide the floating reCAPTCHA badge */
     .grecaptcha-badge {
