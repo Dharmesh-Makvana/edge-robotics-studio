@@ -8,6 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
+    "postbuild": "node scripts/generate-static-routes.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
