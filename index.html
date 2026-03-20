@@ -14,7 +14,7 @@
   <meta name="keywords"
     content="Edge Robotics Studio, Robotics, ROS2, Embedded Systems, Computer Vision, AI, Automation, Gazebo, Simulation, PCB Design" />
   <meta name="author" content="Dharmesh Makvana" />
-  <link id="canonical-link" rel="canonical" href="https://edgeroboticsstudio.com" />
+  <link id="canonical-link" rel="canonical" href="https://edgeroboticsstudio.com/" />
   <script>
     (function(l) {
       if (l.search[1] === 'p' ) {
@@ -37,11 +37,9 @@
     (function() {
       var canonical = document.getElementById('canonical-link');
       var path = window.location.pathname;
-      // Remove trailing slash if present (including root to match sitemap)
       var finalPath = path;
-      if (finalPath === '/') {
-        finalPath = '';
-      } else if (finalPath.length > 1 && finalPath.endsWith('/')) {
+      // Remove trailing slash for non-root paths only
+      if (finalPath.length > 1 && finalPath.endsWith('/')) {
         finalPath = finalPath.slice(0, -1);
       }
       canonical.setAttribute('href', 'https://edgeroboticsstudio.com' + finalPath);
