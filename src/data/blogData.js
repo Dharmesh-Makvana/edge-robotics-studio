@@ -1,6 +1,7 @@
 import thumbnailImage from "../assets/thumbnail.png";
 import vacationImage from "../assets/vacation.jpeg";
 import oneYearCompletionImage from "../assets/1_year_completion.png";
+import droneDragonflyImage from "../assets/thumbnail_drone_dragonfly.png";
 
 export const blogPosts = [
     {
@@ -103,6 +104,64 @@ export const blogPosts = [
             {
                 type: "paragraph",
                 text: "We want to thank everyone who has supported us, followed our journey, and believed in our vision. The future is bright, and we are just getting started!"
+            }
+        ]
+    },
+    {
+        id: 3,
+        title: "From Dragonfly Toys to Drone Dynamics",
+        slug: "dragonfly-toys-to-drone-flight",
+        date: "April 2026",
+        author: "Edge Robotics Studio",
+        category: "Technical",
+        disableLink: true,
+        imageAspectRatio: "aspect-square",
+        excerpt: "Exploring how simple dragonfly toys demonstrate the aerodynamics of flight and how those core concepts scale up to modern autonomous quadcopters.",
+        coverImage: droneDragonflyImage,
+        content: [
+            {
+                type: "paragraph",
+                text: "Have you ever played with a traditional bamboo dragonfly toy (a classic T-shaped hand-spun flyer)? These simple toys from our childhood are actually perfect demonstrations of fundamental aerodynamics. By observing how they launch and stay airborne, we can grasp the core concepts of lift, thrust, and stability that modern drones use today."
+            },
+            {
+                type: "heading",
+                text: "The Mechanics of a Bamboo Dragonfly"
+            },
+            {
+                type: "paragraph",
+                text: "A typical bamboo dragonfly operates by rapidly spinning a set of horizontal, angled blades attached to a vertical stick. As you rub the stick quickly between your palms and release it, the rotational energy forces the blades to push air downward. According to Newton's Third Law (every action has an equal and opposite reaction), pushing the air down creates an upward force called 'lift'. Since the toy is lightweight, this small amount of lift is enough to overcome gravity and send it flying into the air."
+            },
+            {
+                type: "paragraph",
+                text: "However, these toys have no control systems. They fly where the wind takes them, and as the rotational energy dissipates, they lose lift and gradually fall back to the ground. They are a pure, unrefined display of aerodynamic lift."
+            },
+            {
+                type: "heading",
+                text: "Scaling Up: Enter the Quadcopter"
+            },
+            {
+                type: "paragraph",
+                text: "Modern drones, specifically quadcopters, take this simple concept and multiply it by four. Instead of a single spinning propeller, a drone uses four rotors. But it’s not just about adding more power—it's about adding extreme precision and control."
+            },
+            {
+                type: "paragraph",
+                text: "If a drone had four propellers all spinning in the same direction, the entire body of the drone would start spinning in the opposite direction due to torque (conservation of angular momentum). To overcome this, a quadcopter uses two propellers spinning clockwise and two spinning counter-clockwise. This perfectly balances the rotational forces, keeping the drone's body stable while it hovers."
+            },
+            {
+                type: "heading",
+                text: "How Drones Actually Steer"
+            },
+            {
+                type: "paragraph",
+                text: "The true brilliance of a quadcopter lies in how it navigates the air using only the speed of its four motors. There are no rudders or mechanical flaps like you see on airplanes."
+            },
+            {
+                type: "paragraph",
+                text: "To move forward (Pitch), the drone simply spins its rear rotors faster than its front rotors. This lifts the back of the drone, tilting it forward, and directs some of the thrust backward, propelling the drone ahead. The same principle applies to moving sideways (Roll). To rotate in place (Yaw), the drone slightly decreases the speed of the clockwise rotors and increases the speed of the counter-clockwise rotors. This intentionally unbalances the torque, causing the drone to spin on its axis without changing its altitude."
+            },
+            {
+                type: "paragraph",
+                text: "The ultimate bridge between a dragonfly toy and a modern drone is the flight controller—the 'brain' of the drone. It reads thousands of measurements per second from gyroscopes and accelerometers to continuously adjust the speed of each motor, transforming raw lift into precise, autonomous, and majestic flight."
             }
         ]
     }

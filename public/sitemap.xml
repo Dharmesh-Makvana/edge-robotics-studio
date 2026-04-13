@@ -91,4 +91,8 @@
     <loc>https://edgeroboticsstudio.com/blog/1-year-of-edge-robotics-studio/</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://edgeroboticsstudio.com/blog/dragonfly-toys-to-drone-flight/</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
