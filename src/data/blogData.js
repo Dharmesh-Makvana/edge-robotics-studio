@@ -1,5 +1,6 @@
 import thumbnailImage from "../assets/thumbnail.png";
 import vacationImage from "../assets/vacation.jpeg";
+import oneYearCompletionImage from "../assets/1_year_completion.png";
 
 export const blogPosts = [
     {
@@ -74,5 +75,36 @@ export const blogPosts = [
                 text: "This space is where I’ll share thoughts, experiences, ideas, and maybe a few experiments. Some posts may be technical, some personal, and others simply reflections from the journey. If you’re reading this, I hope you find something here that resonates with you and reminds you that it’s okay to pause, reflect, and move forward at your own pace."
             }
         ]
+    },
+    {
+        id: 2,
+        title: "1 Year of Edge Robotics Studio",
+        slug: "1-year-of-edge-robotics-studio",
+        date: "April 2026",
+        author: "Edge Robotics Studio",
+        category: "Edge Robotics Studio",
+        disableLink: true,
+        imageAspectRatio: "aspect-square",
+        excerpt: "Celebrating exactly one year of robotics design, innovation, and learning at Edge Robotics Studio.",
+        coverImage: oneYearCompletionImage,
+        content: [
+            {
+                type: "paragraph",
+                text: "It has been an incredible journey since we started Edge Robotics Studio one year ago. From the very beginning, our goal has been to explore the boundaries of robotics, embedded systems, and automation software."
+            },
+            {
+                type: "heading",
+                text: "A Year of Growth and Learning"
+            },
+            {
+                type: "paragraph",
+                text: "Reflecting on the past year, we have faced exciting technical hurdles, built amazing systems, and grown alongside our community. This milestone marks not just the passage of time, but the solid foundation we’ve laid for future innovations."
+            },
+            {
+                type: "paragraph",
+                text: "We want to thank everyone who has supported us, followed our journey, and believed in our vision. The future is bright, and we are just getting started!"
+            }
+        ]
     }
 ];
+

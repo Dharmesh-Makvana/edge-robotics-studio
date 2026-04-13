@@ -56,18 +56,20 @@ const Blog = () => {
                                     transition={{ delay: (index * 0.1) }}
                                     className="relative bg-surface/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-slate-700/80 group transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_-15px_rgba(14,165,233,0.2)] hover:border-primary/40 flex flex-col h-full"
                                 >
-                                    <Link to={`/blog/${post.slug}`} className="absolute inset-0 z-10">
-                                        <span className="sr-only">Read Post</span>
-                                    </Link>
-                                    <div className="relative h-48 overflow-hidden">
+                                    {!post.disableLink && (
+                                        <Link to={`/blog/${post.slug}`} className="absolute inset-0 z-10">
+                                            <span className="sr-only">Read Post</span>
+                                        </Link>
+                                    )}
+                                    <div className={`relative overflow-hidden ${post.imageAspectRatio || 'h-64'}`}>
                                         <img
                                             src={post.coverImage}
                                             alt={post.title}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                            className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${post.imagePosition || 'object-center'}`}
                                         />
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
                                     </div>
-                                    <div className="p-6">
+                                    <div className="p-6 flex flex-col flex-1">
                                         <div className="flex items-center gap-2 text-primary text-sm mb-3">
                                             <Calendar className="w-4 h-4" />
                                             <span>{post.date}</span>
@@ -78,10 +80,12 @@ const Blog = () => {
                                         <p className="text-gray-400 text-sm mb-6 line-clamp-3">
                                             {post.excerpt}
                                         </p>
-                                        <span className="inline-flex items-center gap-2 text-white font-medium group-hover:text-primary transition-colors mt-auto">
-                                            Read More
-                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                        </span>
+                                        {!post.disableLink && (
+                                            <span className="inline-flex items-center gap-2 text-white font-medium group-hover:text-primary transition-colors mt-auto">
+                                                Read More
+                                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </span>
+                                        )}
                                     </div>
                                 </motion.div>
                             ))}
