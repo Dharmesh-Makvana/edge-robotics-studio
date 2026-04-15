@@ -5,27 +5,21 @@ const Footer = () => {
     return (
         <footer className="bg-secondary text-slate-300 py-16 border-t border-slate-800">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
-                <div className="space-y-4 lg:col-span-4 lg:pr-12">
+                <div className="space-y-4 lg:col-span-5 lg:pr-12">
                     <h3 className="text-2xl font-bold text-white">Edge Robotics Studio</h3>
-                    <p className="text-sm text-slate-400 text-justify max-w-[280px]">
-                        Delivering end-to-end robotics development and prototyping services that convert innovative ideas into functional robotic systems.
+                    <p className="text-sm text-slate-400 text-justify max-w-[300px]">
+                        Edge Robotics Studio is a one-stop solution for robotics product development, prototyping, and innovation support.
                     </p>
                 </div>
-                <div className="lg:col-span-2">
+                <div className="lg:col-span-3">
                     <h4 className="text-white font-semibold mb-6">Company</h4>
                     <ul className="space-y-3 text-sm">
-                        <li><Link to="/about/" className="hover:text-primary transition-colors">About Us</Link></li>
+                        <li><Link to="/about/" className="hover:text-primary transition-colors">About</Link></li>
                         <li><Link to="/blog/" className="hover:text-primary transition-colors">Blog</Link></li>
                         <li><Link to="/contact/" className="hover:text-primary transition-colors">Contact</Link></li>
                     </ul>
                 </div>
-                <div className="lg:col-span-3">
-                    <h4 className="text-white font-semibold mb-6">Careers</h4>
-                    <p className="text-sm text-slate-400 leading-relaxed text-justify max-w-[200px]">
-                        We are looking for interns and volunteers who can help us build Edge Robotics Studio.
-                    </p>
-                </div>
-                <div className="lg:col-span-3">
+                <div className="lg:col-span-4">
                     <h4 className="text-white font-semibold mb-6">Connect</h4>
                     <div className="flex gap-4">
                         <a href="https://github.com/edgeroboticsstudio" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-lg hover:bg-primary hover:text-slate-950 transition-all">

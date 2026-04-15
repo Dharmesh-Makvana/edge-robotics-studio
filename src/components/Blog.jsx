@@ -19,7 +19,7 @@ const Blog = () => {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-4xl md:text-5xl font-black mb-6 tracking-tight text-white pb-2"
                     >
-                        Our Blog
+                        Blog
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}

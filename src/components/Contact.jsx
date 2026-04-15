@@ -115,7 +115,7 @@ const Contact = () => {
                         transition={{ delay: 0.1 }}
                         className="text-gray-300 text-lg"
                     >
-                        Have a project in mind or want to learn more about our services? We'd love to hear from you.
+                        Have a project in mind or want to learn more about the services? Edge Robotics Studio would love to hear from you.
                     </motion.p>
                 </div>
                 <div className="grid lg:grid-cols-2 gap-12">
@@ -151,7 +151,7 @@ const Contact = () => {
                         <div className="bg-gradient-to-br from-primary/20 via-primary/5 to-transparent p-8 rounded-3xl border border-primary/20 backdrop-blur-md shadow-[0_0_30px_-10px_rgba(14,165,233,0.2)]">
                             <h3 className="text-xl font-bold text-white mb-4">Let's Build the Future</h3>
                             <p className="text-gray-300">
-                                Our team is ready to help you navigate the complexities of robotics development and system integration.
+                                Edge Robotics Studio is ready to help you navigate the complexities of robotics development and system integration.
                             </p>
                         </div>
                     </motion.div>
@@ -211,7 +211,7 @@ const Contact = () => {
                                     value={formData.subject}
                                     onChange={handleChange}
                                     className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                                    placeholder="How can we help?"
+                                    placeholder="How can Edge Robotics Studio help?"
                                 />
                             </div>
                             <div className="space-y-2">
@@ -235,7 +235,7 @@ const Contact = () => {
                             {status === "success" && (
                                 <div className="p-4 bg-emerald-500/10 border border-emerald-500/50 rounded-lg flex items-center gap-3 text-emerald-400">
                                     <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                                    <p className="text-sm font-medium">Message sent successfully! We will get back to you soon.</p>
+                                    <p className="text-sm font-medium">Message sent successfully! Edge Robotics Studio will get back to you soon.</p>
                                 </div>
                             )}
 

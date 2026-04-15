@@ -14,7 +14,7 @@ const Services = () => {
                         viewport={{ once: true }}
                         className="text-3xl md:text-4xl font-bold text-white mb-4"
                     >
-                        Our Expertise
+                        Services
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}

@@ -21,7 +21,7 @@ const Cta = () => {
                         Ready to automate <br className="hidden md:block" /> your operations?
                     </h2>
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                        Whether you need a custom ROS2 pipeline, a bespoke embedded system, or an end-to-end robotics integration, we have the expertise to bring your vision to life.
+                        Whether you need a custom ROS2 pipeline, a bespoke embedded system, or an end-to-end robotics integration, Edge Robotics Studio has the expertise to bring your vision to life.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link

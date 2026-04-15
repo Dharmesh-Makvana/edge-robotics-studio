@@ -14,22 +14,21 @@ const About = () => {
                     >
                         <div className="relative z-10">
                             <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">About</span>{" "}
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">the Founder</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">About</span>
                             </h1>
-                            <p className="text-xl text-primary font-medium mb-8">
-                                I’m Dharmesh Makvana, a freelance roboticist.
+                            <p className="text-xl text-primary font-medium mb-8 leading-snug">
+                                Edge Robotics Studio is a robotics consultancy founded by Dharmesh Makvana.
                             </p>
                         </div>
                         <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                             <p>
-                                I’m passionate about bringing design and code together to build intelligent, responsive machines. For me, the real reward is in seeing a creation move with purpose and respond to its surroundings. That spark is what drives me to keep building.
+                                Edge Robotics Studio is passionate about bringing design and code together to build intelligent, responsive machines. The real reward is in seeing a creation move with purpose and respond to its surroundings. That spark is what drives Edge Robotics Studio to keep building.
                             </p>
                             <p>
-                                Today, I’m fortunate to work on projects that turn this passion into reality. I design, develop, and integrate robotic systems that blend hardware and software to solve real-world automation problems.
+                                Today, Edge Robotics Studio is fortunate to work on projects that turn this passion into reality. Edge Robotics Studio designs, develops, and integrates robotic systems that blend hardware and software to solve real-world automation problems.
                             </p>
                             <p>
-                                Feel free to explore the rest of this site to see some of the projects I’ve worked on.
+                                Feel free to explore the rest of this site to see some of the projects Edge Robotics Studio has worked on.
                             </p>
                         </div>
                     </motion.div>

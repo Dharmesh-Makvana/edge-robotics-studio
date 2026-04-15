@@ -11,6 +11,9 @@ import ServiceDetails from "./components/ServiceDetails";
 import Services from "./components/Services";
 import ProjectDetails from "./components/ProjectDetails";
 import Projects from "./components/Projects";
+import Facility from "./components/Facility";
+import Product from "./components/Product";
+import Courses from "./components/Courses";
 import Footer from "./components/Footer";
 
 const ScrollToTop = () => {
@@ -57,6 +60,9 @@ function App() {
           <Route path="/services/:slug" element={<ServiceDetails />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetails />} />
+          <Route path="/facility" element={<Facility />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
         <Footer />
       </div>

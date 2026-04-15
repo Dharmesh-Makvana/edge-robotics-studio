@@ -18,7 +18,7 @@ const Projects = () => {
                         viewport={{ once: true }}
                         className="text-3xl md:text-5xl font-black text-white mb-6"
                     >
-                        Featured Projects
+                        Projects
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -27,8 +27,8 @@ const Projects = () => {
                         transition={{ delay: 0.1 }}
                         className="text-gray-400 text-lg"
                     >
-                        Our engineering team is dedicated to pushing the boundaries of robotics and AI.
-                        Explore our latest innovations and upcoming releases.
+                        Edge Robotics Studio is dedicated to pushing the boundaries of robotics and AI.
+                        Explore the latest innovations and upcoming releases.
                     </motion.p>
                 </div>
 

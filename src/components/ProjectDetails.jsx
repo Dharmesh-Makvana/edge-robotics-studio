@@ -57,8 +57,8 @@ const ProjectDetails = () => {
                     <div className="mt-20 p-10 bg-gradient-to-br from-surface to-slate-800/50 rounded-3xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden group">
                         <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors duration-500 rounded-3xl pointer-events-none"></div>
                         <div className="relative z-10">
-                            <h3 className="text-2xl font-bold text-white mb-2">Build your next project with us</h3>
-                            <p className="text-gray-400">Our engineering team is ready to tackle your hardest robotics challenges.</p>
+                            <h3 className="text-2xl font-bold text-white mb-2">Build your next project with Edge Robotics Studio</h3>
+                            <p className="text-gray-400">Edge Robotics Studio is ready to tackle your hardest robotics challenges.</p>
                         </div>
                         <Link to="/contact/" className="relative z-10 whitespace-nowrap bg-primary text-white font-medium px-8 py-4 rounded-xl hover:bg-primary-hover transition-all duration-300 shadow-[0_0_20px_-5px_rgba(14,165,233,0.4)] hover:shadow-[0_0_30px_-5px_rgba(14,165,233,0.6)] hover:-translate-y-1">
                             Start a Conversation

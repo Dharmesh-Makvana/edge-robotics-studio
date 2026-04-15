@@ -42,7 +42,7 @@ const Features = () => {
                         transition={{ delay: 0.1 }}
                         className="text-gray-400 text-lg leading-relaxed"
                     >
-                        We engineer robotic solutions that excel in unpredictable, dynamic environments. By tightly coupling intelligent software with performant hardware, we deliver unmatched autonomy.
+                        Edge Robotics Studio engineers robotic solutions that excel in unpredictable, dynamic environments. By tightly coupling intelligent software with performant hardware, Edge Robotics Studio delivers unmatched autonomy.
                     </motion.p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
