@@ -99,7 +99,7 @@ const Contact = () => {
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -ml-48 -mb-48"></div>
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="text-center max-w-3xl mx-auto mb-16">
+                <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ const Contact = () => {
                         Have a project in mind or want to learn more about the services? Edge Robotics Studio would love to hear from you.
                     </motion.p>
                 </div>
-                <div className="grid lg:grid-cols-2 gap-12">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
                     {/* Contact Information */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -126,7 +126,7 @@ const Contact = () => {
                         viewport={{ once: true }}
                         className="space-y-8"
                     >
-                        <div className="bg-surface/50 backdrop-blur-md p-8 rounded-3xl border border-slate-700/50 shadow-xl hover:border-primary/30 transition-colors">
+                        <div className="bg-surface/50 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-slate-700/50 shadow-xl hover:border-primary/30 transition-colors">
                             <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
                             <div className="space-y-6">
                                 {contactInfo.map((info, index) => (
@@ -138,9 +138,9 @@ const Contact = () => {
                                         <div className="p-3 bg-slate-800 rounded-lg group-hover:bg-primary/10 transition-colors">
                                             {info.icon}
                                         </div>
-                                        <div>
+                                        <div className="min-w-0 flex-1">
                                             <p className="text-sm text-gray-400">{info.label}</p>
-                                            <p className="text-white font-medium group-hover:text-primary transition-colors">
+                                            <p className="text-white font-medium group-hover:text-primary transition-colors break-all">
                                                 {info.value}
                                             </p>
                                         </div>
@@ -148,7 +148,7 @@ const Contact = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="bg-gradient-to-br from-primary/20 via-primary/5 to-transparent p-8 rounded-3xl border border-primary/20 backdrop-blur-md shadow-[0_0_30px_-10px_rgba(14,165,233,0.2)]">
+                        <div className="bg-gradient-to-br from-primary/20 via-primary/5 to-transparent p-6 sm:p-8 rounded-3xl border border-primary/20 backdrop-blur-md shadow-[0_0_30px_-10px_rgba(14,165,233,0.2)]">
                             <h3 className="text-xl font-bold text-white mb-4">Let's Build the Future</h3>
                             <p className="text-gray-300">
                                 Edge Robotics Studio is ready to help you navigate the complexities of robotics development and system integration.
@@ -160,7 +160,7 @@ const Contact = () => {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-surface p-8 rounded-2xl border border-slate-700/50"
+                        className="bg-surface p-6 sm:p-8 rounded-2xl border border-slate-700/50"
                     >
                         <form className="space-y-6" onSubmit={handleSubmit}>
                             <div className="hidden" aria-hidden="true" style={{ display: 'none' }}>
