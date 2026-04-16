@@ -58,7 +58,7 @@ const Navbar = () => {
           </Link>
 
           {/* Center Pill Menu for Desktop */}
-          <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center bg-slate-800/40 backdrop-blur-lg p-1.5 rounded-full border border-white/5 shadow-inner">
+          <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-1 bg-slate-800/40 backdrop-blur-lg p-1.5 rounded-full border border-white/5 shadow-inner">
              {navLinks.map((link) => (
               <div key={link.name} className="relative group">
                 {link.dropdown ? (
@@ -71,7 +71,7 @@ const Navbar = () => {
                     {/* Modern Floating Dropdown */}
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-60 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 -translate-y-4 group-hover:translate-y-0">
                       <div className="bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-3xl p-3 shadow-2xl flex flex-col gap-1 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[50px] -z-10 rounded-full"></div>
+                        <div className="hidden md:block absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[50px] -z-10 rounded-full"></div>
                         {link.dropdown.map(drop => (
                           <Link 
                             key={drop.name} 
@@ -127,8 +127,8 @@ const Navbar = () => {
             className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-2xl lg:hidden overflow-y-auto text-white flex flex-col pt-32 pb-20"
           >
             {/* Ambient Background Glows */}
-            <div className="absolute top-1/4 left-0 w-64 h-64 bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
-            <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+            <div className="hidden md:block absolute top-1/4 left-0 w-64 h-64 bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
+            <div className="hidden md:block absolute bottom-1/4 right-0 w-64 h-64 bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
 
             <div className="absolute top-6 right-4 md:right-8 z-[100]">
                  <button 
