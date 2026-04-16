@@ -5,6 +5,8 @@ on:
     branches:
       - main
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: read
@@ -15,11 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set temporary Node 24 requirement (Auto-expires June 2, 2026)
-        run: |
-          if [ $(date +%Y%m%d) -lt 20260602 ]; then
-            echo "FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true" >> $GITHUB_ENV
-          fi
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
@@ -39,9 +36,4 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Set temporary Node 24 requirement (Auto-expires June 2, 2026)
-        run: |
-          if [ $(date +%Y%m%d) -lt 20260602 ]; then
-            echo "FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true" >> $GITHUB_ENV
-          fi
       - uses: actions/deploy-pages@v4
