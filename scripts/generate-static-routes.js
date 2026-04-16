@@ -24,7 +24,7 @@ async function generateStaticRoutes() {
   const locs = sitemapContent.match(/<loc>(.*?)<\/loc>/g) || [];
   
   const urls = locs.map(loc => loc.replace(/<\/?loc>/g, '').trim());
-  const domain = 'https://edgeroboticsstudio.com';
+  const domain = 'https://www.edgeroboticsstudio.com';
 
   console.log(`Found ${urls.length} URLs in sitemap.`);
 
