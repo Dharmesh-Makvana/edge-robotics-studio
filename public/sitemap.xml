@@ -25,6 +25,18 @@
     <loc>https://edgeroboticsstudio.com/contact/</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://edgeroboticsstudio.com/facility/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edgeroboticsstudio.com/product/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edgeroboticsstudio.com/courses/</loc>
+    <priority>0.8</priority>
+  </url>
 
   <!-- Service Details -->
   <url>
