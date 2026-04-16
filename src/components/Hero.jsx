@@ -44,7 +44,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="text-base sm:text-lg md:text-2xl text-gray-300 max-w-3xl mb-12 leading-relaxed px-2"
                 >
-                    Edge Robotics Studio is a one-stop solution for robotics product development, prototyping, and innovation support.
+                    Bridging the gap between knowledge and creation. Empowering individuals and organizations to innovate through hands-on robotics, learning, and intelligent system development.
                 </motion.p>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="space-y-4 lg:col-span-5 lg:pr-12">
                     <h3 className="text-2xl font-bold text-white">Edge Robotics Studio</h3>
                     <p className="text-sm text-slate-400 text-justify max-w-[300px]">
-                        Edge Robotics Studio is a one-stop solution for robotics product development, prototyping, and innovation support.
+                        Bridging the gap between knowledge and creation. Empowering individuals to build, experiment, and turn ideas into reality.
                     </p>
                 </div>
                 <div className="lg:col-span-3">

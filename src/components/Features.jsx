@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
-import { Cpu, Maximize2, ShieldCheck, Zap } from "lucide-react";
+import { BookOpen, Layers, Zap, Globe } from "lucide-react";
 const features = [
     {
-        title: "Intelligent Hardware",
-        description: "Custom PCB design and embedded systems optimized for edge AI and real-time processing.",
-        icon: <Cpu className="w-8 h-8 text-primary" />
+        title: "Hands-on Learning",
+        description: "Activity-based education programs designed to bridge the gap between theoretical concepts and real-world application.",
+        icon: <BookOpen className="w-8 h-8 text-primary" />
     },
     {
-        title: "Scalable Software",
-        description: "Robust ROS2 architectures and modular firmware ready to scale from prototype to fleet.",
-        icon: <Maximize2 className="w-8 h-8 text-primary" />
+        title: "End-to-End Solutions",
+        description: "Bringing together mechanical design, electronics, software, and AI to build practical, intelligent machines.",
+        icon: <Layers className="w-8 h-8 text-primary" />
     },
     {
-        title: "Rigorous Validation",
-        description: "Extensive SIL/HIL testing and simulation ensuring your system never fails in the real world.",
-        icon: <ShieldCheck className="w-8 h-8 text-primary" />
+        title: "Accessible Technology",
+        description: "Providing the tools, resources, and knowledge necessary to empower anyone to become a self-reliant creator.",
+        icon: <Globe className="w-8 h-8 text-primary" />
     },
     {
-        title: "Rapid Iteration",
-        description: "Fast prototyping cycles employing 3D printing and agile methodologies to beat deadlines.",
+        title: "Real-world Innovation",
+        description: "Focusing on transforming raw ideas into impactful, deployable systems that drive meaningful progress.",
         icon: <Zap className="w-8 h-8 text-primary" />
     }
 ];
@@ -42,7 +42,7 @@ const Features = () => {
                         transition={{ delay: 0.1 }}
                         className="text-gray-400 text-lg leading-relaxed"
                     >
-                        Edge Robotics Studio engineers robotic solutions that excel in unpredictable, dynamic environments. By tightly coupling intelligent software with performant hardware, Edge Robotics Studio delivers unmatched autonomy.
+                        Edge Robotics Studio promotes activity-based education and engineers end-to-end robotic solutions. By making knowledge and modern technology accessible, we enable creators to drive meaningful progress.
                     </motion.p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

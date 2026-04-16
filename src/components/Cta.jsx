@@ -18,10 +18,10 @@ const Cta = () => {
                         <TerminalSquare className="w-8 h-8 text-primary" />
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                        Ready to automate <br className="hidden md:block" /> your operations?
+                        Ready to turn your <br className="hidden md:block" /> ideas into reality?
                     </h2>
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                        Whether you need a custom ROS2 pipeline, a bespoke embedded system, or an end-to-end robotics integration, Edge Robotics Studio has the expertise to bring your vision to life.
+                        Whether you're looking to learn through hands-on experiences or need an end-to-end robotics solution engineered from scratch, Edge Robotics Studio provides the tools and expertise to make it happen.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     Cpu, Code, Activity, Eye, Compass, LayoutDashboard,
-    CircuitBoard, Box, ShieldCheck, Cloud, Wrench, FileText
+    CircuitBoard, Box, ShieldCheck, Cloud, Wrench, FileText, BookOpen
 } from 'lucide-react';
 
 export const serviceData = [
@@ -124,5 +124,15 @@ We leverage rapid manufacturing technologies like high-resolution 3D printing an
         content: `Creating the crucial knowledge base for your system's long-term success.
         
 Good engineering requires good documentation. We produce clear, comprehensive technical documentation including system architecture diagrams, detailed API references, and step-by-step developer guides. This ensures that your team can easily understand, maintain, and expand upon the systems we build.`
+    },
+    {
+        id: 13,
+        slug: 'education-and-training',
+        title: 'Education & Training',
+        description: 'Hands-on courses, workshops, and coaching for aspiring engineers and autonomous creators.',
+        icon: <BookOpen className="w-8 h-8 text-primary" />,
+        content: `Empowering self-reliant creators through activity-based learning.
+        
+Our educational programs go beyond theoretical concepts, giving you the practical tools and guidance required to build real-world intelligent systems. We offer workshops and specialized training designed to make complex robotics technology accessible and encourage innovation from the ground up.`
     }
 ];

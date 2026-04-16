@@ -27,7 +27,7 @@ const Courses = () => {
                     </motion.div>
                     
                     <p className="text-xl text-gray-400 mt-8 max-w-2xl mx-auto leading-relaxed">
-                        Edge Robotics Studio is preparing comprehensive and hands-on robotics courses. Educational programs designed for the future will be available soon!
+                        We are building hands-on, activity-based courses designed to bridge the gap between theoretical knowledge and real-world creation. Stay tuned!
                     </p>
                 </motion.div>
             </div>

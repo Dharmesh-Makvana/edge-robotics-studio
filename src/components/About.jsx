@@ -16,20 +16,35 @@ const About = () => {
                             <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">About</span>
                             </h1>
-                            <p className="text-xl text-primary font-medium mb-8 leading-snug">
-                                Edge Robotics Studio is a robotics consultancy founded by Dharmesh Makvana.
+                            <p className="text-xl text-primary font-medium mb-8 leading-snug text-justify">
+                                Edge Robotics Studio is a robotics and embedded systems engineering studio founded by Dharmesh Makvana, focused on building real-world intelligent systems while empowering people to innovate through technology.
                             </p>
                         </div>
-                        <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+                        <div className="space-y-6 text-gray-300 text-lg leading-relaxed shadow-sm text-justify">
                             <p>
-                                Edge Robotics Studio is passionate about bringing design and code together to build intelligent, responsive machines. The real reward is in seeing a creation move with purpose and respond to its surroundings. That spark is what drives Edge Robotics Studio to keep building.
+                                It brings together mechanical design, electronics, software, and AI to create end-to-end solutions from concept to deployment.
                             </p>
                             <p>
-                                Today, Edge Robotics Studio is fortunate to work on projects that turn this passion into reality. Edge Robotics Studio designs, develops, and integrates robotic systems that blend hardware and software to solve real-world automation problems.
+                                Built on hands-on experience and a passion for making, the studio goes beyond engineering services. It promotes activity-based learning where individuals don’t just learn concepts but apply them to solve real problems. Edge Robotics Studio exists to bridge the gap between knowledge and creation encouraging people to build, experiment, and turn ideas into reality.
                             </p>
-                            <p>
-                                Feel free to explore the rest of this site to see some of the projects Edge Robotics Studio has worked on.
-                            </p>
+
+                            <div className="pt-2">
+                                <h3 className="text-2xl font-bold text-white mb-3">
+                                    Mission
+                                </h3>
+                                <p className="text-gray-400">
+                                    To make technology, tools, and knowledge accessible to anyone who wants to learn, build, and innovate. Edge Robotics Studio aims to empower individuals through hands-on experiences, enabling them to transform ideas into practical solutions while fostering creativity, problem-solving, and continuous learning.
+                                </p>
+                            </div>
+
+                            <div className="pt-2">
+                                <h3 className="text-2xl font-bold text-white mb-3">
+                                    Vision
+                                </h3>
+                                <p className="text-gray-400">
+                                    To create a future where every individual has the ability to design, build, and innovate using modern technology. Edge Robotics Studio envisions a world of self-reliant creators and thinkers who can turn ideas into impactful solutions and drive meaningful progress.
+                                </p>
+                            </div>
                         </div>
                     </motion.div>
                     <motion.div
