@@ -88,6 +88,10 @@
     <loc>https://www.edgeroboticsstudio.com/services/technical-documentation/</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://www.edgeroboticsstudio.com/services/education-and-training/</loc>
+    <priority>0.6</priority>
+  </url>
 
   <!-- Project Details -->
   <url>
