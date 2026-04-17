@@ -14,6 +14,7 @@ import Projects from "./components/Projects";
 import Facility from "./components/Facility";
 import Product from "./components/Product";
 import Courses from "./components/Courses";
+import Studio from "./components/Studio";
 import Footer from "./components/Footer";
 
 const ScrollToTop = () => {
@@ -56,6 +57,7 @@ function App() {
           />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/studio" element={<Studio />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServiceDetails />} />
           <Route path="/projects" element={<Projects />} />

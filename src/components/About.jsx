@@ -6,58 +6,76 @@ const About = () => {
             {/* Background Orbs */}
             <div className="hidden md:block absolute top-20 left-0 w-[500px] h-[500px] bg-primary/10 blur-[150px] rounded-full pointer-events-none"></div>
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                {/* Centered Heading */}
+                <div className="text-center mb-20">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-4xl md:text-6xl font-black mb-4 tracking-tight text-white"
+                    >
+                        About
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                        className="text-xl text-white font-normal tracking-wide"
+                    >
+                        Bridging the gap between idea and creation
+                    </motion.p>
+                </div>
+
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
-                        className="space-y-8"
+                        className="space-y-12"
                     >
-                        <div className="relative z-10">
-                            <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">About</span>
-                            </h1>
-                            <p className="text-xl text-primary font-medium mb-8 leading-snug text-justify">
-                                Edge Robotics Studio is a robotics studio founded by Dharmesh Makvana, focused on building real-world intelligent systems while empowering people to innovate through technology.
-                            </p>
-                        </div>
-                        <div className="space-y-6 text-gray-300 text-lg leading-relaxed shadow-sm text-justify">
-                            <p>
-                                It brings together mechanical design, electronics, software, and AI to create end-to-end solutions from concept to deployment.
-                            </p>
-                            <p>
-                                Built on hands-on experience and a passion for making, the studio goes beyond engineering services. It promotes activity-based learning where individuals don’t just learn concepts but apply them to solve real problems. Edge Robotics Studio exists to bridge the gap between knowledge and creation encouraging people to build, experiment, and turn ideas into reality.
-                            </p>
+                        <div className="space-y-10 text-gray-300 text-lg leading-relaxed text-justify">
+                            <section>
+                                <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                                    <span className="w-8 h-px bg-primary"></span>
+                                    Our Story
+                                </h2>
+                                <p>
+                                    Edge Robotics Studio is a space built on the belief that access to technology and knowledge should be open to everyone who is curious to learn, build, and innovate.
+                                    Founded by Dharmesh Makvana, the studio focuses on making tools and learning accessible while empowering individuals to turn their ideas into creation.
+                                </p>
+                            </section>
 
-                            <div className="pt-2">
-                                <h3 className="text-2xl font-bold text-white mb-3">
+                            <section>
+                                <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                                    <span className="w-8 h-px bg-primary"></span>
                                     Mission
-                                </h3>
-                                <p className="text-gray-400">
-                                    To make technology, tools, and knowledge accessible to anyone who wants to learn, build, and innovate. Edge Robotics Studio aims to empower individuals through hands-on experiences, enabling them to transform ideas into practical solutions while fostering creativity, problem-solving, and continuous learning.
+                                </h2>
+                                <p className="text-white font-semibold italic border-l-2 border-primary pl-6 py-2">
+                                    "Our mission is to empower individuals to transform ideas into creation while fostering creativity, problem-solving, and continuous learning, enabling a new generation of self-reliant creators."
                                 </p>
-                            </div>
+                            </section>
 
-                            <div className="pt-2">
-                                <h3 className="text-2xl font-bold text-white mb-3">
+                            <section>
+                                <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                                    <span className="w-8 h-px bg-primary"></span>
                                     Vision
-                                </h3>
-                                <p className="text-gray-400">
-                                    To create a future where every individual has the ability to design, build, and innovate using modern technology. Edge Robotics Studio envisions a world of self-reliant creators and thinkers who can turn ideas into impactful solutions and drive meaningful progress.
+                                </h2>
+                                <p>
+                                    To nurture a generation of thinkers and builders who are confident in exploring the future and turning their unique ideas into meaningful reality through technology and collaboration.
                                 </p>
-                            </div>
+                            </section>
                         </div>
                     </motion.div>
+
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="relative"
+                        className="relative lg:sticky lg:top-32"
                     >
-                        <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
+                        <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-90"></div>
                         <img
                             src={aboutImage}
                             alt="Dharmesh Makvana"
-                            className="relative rounded-3xl shadow-2xl border border-slate-700/50 object-cover w-full h-[600px]"
+                            className="relative rounded-3xl shadow-2xl border border-slate-700/50 object-cover w-full h-[500px] lg:h-[700px]"
                         />
                     </motion.div>
                 </div>

@@ -42,7 +42,7 @@ const Features = () => {
                         transition={{ delay: 0.1 }}
                         className="text-gray-400 text-lg leading-relaxed"
                     >
-                        Edge Robotics Studio promotes activity-based education and engineers end-to-end robotic solutions. By making knowledge and modern technology accessible, we enable creators to drive meaningful progress.
+                        We empower individuals to transform ideas into creation while fostering creativity, problem-solving, and continuous learning, enabling a new generation of self-reliant creators.
                     </motion.p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

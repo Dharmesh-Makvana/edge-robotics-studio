@@ -38,14 +38,7 @@ const Hero = () => {
                         Guiding Exploration
                     </h1>
                 </motion.div>
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                    className="text-base sm:text-lg md:text-2xl text-gray-300 max-w-3xl mb-12 leading-relaxed px-2"
-                >
-                    Bridging the gap between knowledge and creation. Empowering individuals and organizations to innovate through hands-on robotics, learning, and intelligent system development.
-                </motion.p>
+                <div className="mb-12"></div>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -63,7 +56,7 @@ const Hero = () => {
                         to="/services/"
                         className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 rounded-full font-semibold transition-all flex items-center justify-center"
                     >
-                        Explore Services
+                        Explore Studio
                     </Link>
                 </motion.div>
             </div>

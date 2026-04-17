@@ -91,7 +91,7 @@ export const blogPosts = [
         content: [
             {
                 type: "paragraph",
-                text: "It has been an incredible journey since we started Edge Robotics Studio one year ago. From the very beginning, our goal has been to explore the boundaries of robotics, embedded systems, and automation software."
+                text: "It has been an incredible journey since launching Edge Robotics Studio one year ago. From the very beginning, the goal has been to explore the boundaries of robotics, embedded systems, and automation software."
             },
             {
                 type: "heading",
@@ -99,11 +99,11 @@ export const blogPosts = [
             },
             {
                 type: "paragraph",
-                text: "Reflecting on the past year, we have faced exciting technical hurdles, built amazing systems, and grown alongside our community. This milestone marks not just the passage of time, but the solid foundation we’ve laid for future innovations."
+                text: "Reflecting on the past year, the studio has faced exciting technical hurdles, built complex systems, and grown alongside a passionate community. This milestone marks not just the passage of time, but the solid foundation laid for future innovations."
             },
             {
                 type: "paragraph",
-                text: "We want to thank everyone who has supported us, followed our journey, and believed in our vision. The future is bright, and we are just getting started!"
+                text: "A sincere thank you to everyone who has supported this journey and believed in the vision. The future is bright, and this is just the beginning!"
             }
         ]
     },

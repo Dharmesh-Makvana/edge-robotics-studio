@@ -113,7 +113,7 @@ const Contact = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-gray-300 text-lg"
+                        className="text-white text-lg"
                     >
                         Have a project in mind or want to learn more about the services? Edge Robotics Studio would love to hear from you.
                     </motion.p>
@@ -151,7 +151,7 @@ const Contact = () => {
                         <div className="bg-gradient-to-br from-primary/20 via-primary/5 to-transparent p-6 sm:p-8 rounded-3xl border border-primary/20 backdrop-blur-md shadow-[0_0_30px_-10px_rgba(14,165,233,0.2)]">
                             <h3 className="text-xl font-bold text-white mb-4">Let's Build the Future</h3>
                             <p className="text-gray-300">
-                                Edge Robotics Studio is ready to help you navigate the complexities of robotics development and system integration.
+                                Edge Robotics Studio empowers your journey from idea to creation.
                             </p>
                         </div>
                     </motion.div>
@@ -214,21 +214,16 @@ const Contact = () => {
                                     placeholder="How can Edge Robotics Studio help?"
                                 />
                             </div>
-                            <div className="space-y-2">
-                                <label htmlFor="message" className="text-sm font-medium text-gray-300">
-                                    Message
-                                </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    required
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    rows="4"
-                                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
-                                    placeholder="Tell us about your project..."
-                                ></textarea>
-                            </div>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                value={formData.message}
+                                onChange={handleChange}
+                                rows="4"
+                                className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                                placeholder="Describe your project and goals..."
+                            ></textarea>
                             {/* reCAPTCHA v3 badge is typically invisible and handled automatically by the provider */}
 
 

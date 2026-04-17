@@ -20,8 +20,8 @@ const Cta = () => {
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                         Ready to turn your <br className="hidden md:block" /> ideas into reality?
                     </h2>
-                    <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                        Whether you're looking to learn through hands-on experiences or need an end-to-end robotics solution engineered from scratch, Edge Robotics Studio provides the tools and expertise to make it happen.
+                    <p className="text-xl text-gray-400 mb-10 max-w-[720px] mx-auto text-justify" style={{ textAlignLast: 'center' }}>
+                        Whatever you’re looking to explore or build, we’re here to support you with our courses, services, products, and facilities. At Edge Robotics Studio, we empower you with the right tools, technology, knowledge, and guidance for your journey from idea to creation.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link
@@ -35,7 +35,7 @@ const Cta = () => {
                             to="/services/"
                             className="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl transition-all border border-slate-700 flex items-center justify-center"
                         >
-                            Explore Services
+                            Explore Studio
                         </Link>
                     </div>
                 </motion.div>

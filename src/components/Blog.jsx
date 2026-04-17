@@ -2,10 +2,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { blogPosts } from "../data/blogData";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, Cpu, Code, UserCircle } from "lucide-react";
 
 const Blog = () => {
-    const categories = ["Edge Robotics Studio", "Technical", "Personal"];
+    const categories = [
+        { name: "Edge Robotics Studio", icon: <Cpu size={18} /> },
+        { name: "Technical", icon: <Code size={18} /> },
+        { name: "Personal", icon: <UserCircle size={18} /> }
+    ];
     const [activeCategory, setActiveCategory] = useState("Edge Robotics Studio");
     const categoryPosts = blogPosts.filter(post => post.category === activeCategory);
     return (
@@ -13,7 +17,7 @@ const Blog = () => {
             {/* Background Orbs */}
             <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-primary/5 blur-[150px] rounded-full pointer-events-none"></div>
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-                <div className="mb-16">
+                <div className="text-center mb-16">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -25,22 +29,23 @@ const Blog = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-gray-300 text-lg max-w-2xl"
+                        className="text-white text-lg max-w-2xl mx-auto"
                     >
                         Insights, experiences, and reflections from the world of robotics and beyond.
                     </motion.p>
                 </div>
-                <div className="flex flex-wrap gap-4 mb-12 justify-center md:justify-start">
+                <div className="flex flex-wrap gap-4 mb-12 justify-center">
                     {categories.map((category) => (
                         <button
-                            key={category}
-                            onClick={() => setActiveCategory(category)}
-                            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${activeCategory === category
-                                    ? "bg-primary text-white shadow-[0_0_15px_rgba(14,165,233,0.5)]"
+                            key={category.name}
+                            onClick={() => setActiveCategory(category.name)}
+                            className={`flex items-center gap-2 px-6 py-2 rounded-full font-medium transition-all duration-300 ${activeCategory === category.name
+                                    ? "bg-primary text-white shadow-[0_0_15px_rgba(14,165,233,0.5)] border-primary"
                                     : "bg-slate-800/50 text-gray-400 hover:bg-slate-700 hover:text-white border border-slate-700/50"
-                                }`}
+                                } border`}
                         >
-                            {category}
+                            {category.icon}
+                            <span className="uppercase tracking-wider text-xs">{category.name}</span>
                         </button>
                     ))}
                 </div>

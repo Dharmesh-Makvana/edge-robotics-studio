@@ -13,7 +13,7 @@ export const serviceData = [
         icon: <Cpu className="w-8 h-8 text-primary" />,
         content: `Development of robust firmware and embedded software for microcontrollers and microprocessors. 
         
-We specialize in creating efficient, low-level code that interfaces directly with hardware. Our expertise includes integrating Real-Time Operating Systems (RTOS) like FreeRTOS or Zephyr to ensure deterministic behavior in critical robotic applications. We also develop highly optimized device drivers to squeeze every ounce of performance out of custom hardware.`
+Specialization includes creating efficient, low-level code that interfaces directly with hardware. Technical expertise covers integrating Real-Time Operating Systems (RTOS) like FreeRTOS or Zephyr to ensure deterministic behavior in critical robotic applications. Highly optimized device drivers are also developed to squeeze every ounce of performance out of custom hardware.`
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ We specialize in creating efficient, low-level code that interfaces directly wit
         icon: <Code className="w-8 h-8 text-primary" />,
         content: `Comprehensive robotics software engineering utilizing the Robot Operating System 2 (ROS2).
         
-From designing multi-node architectures to configuring Data Distribution Service (DDS) middleware, we build scalable and secure software foundations for robotic systems. Our work ensures smooth communication between sensors, actuators, and complex algorithms, orchestrating the entire system for reliable autonomous operation.`
+From designing multi-node architectures to configuring Data Distribution Service (DDS) middleware, the studio builds scalable and secure software foundations for robotic systems. This work ensures smooth communication between sensors, actuators, and complex algorithms, orchestrating the entire system for reliable autonomous operation.`
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ From designing multi-node architectures to configuring Data Distribution Service
         icon: <Activity className="w-8 h-8 text-primary" />,
         content: `Creating rigorous virtual environments to test and validate robotic software.
         
-Before any code runs on expensive physical hardware, we build physics-accurate simulations using tools like Gazebo and Webots. These "digital twins" allow us to safely test edge cases, refine autonomous behaviors, and ensure system stability under highly varied conditions, drastically reducing development time and hardware risk.`
+Before any code runs on expensive physical hardware, the studio builds physics-accurate simulations using tools like Gazebo and Webots. These "digital twins" allow for safe testing of edge cases, refinement of autonomous behaviors, and assurance of system stability under highly varied conditions, drastically reducing development time and hardware risk.`
     },
     {
         id: 4,
@@ -43,7 +43,7 @@ Before any code runs on expensive physical hardware, we build physics-accurate s
         icon: <Eye className="w-8 h-8 text-primary" />,
         content: `Empowering robots to perceive and understand their surroundings.
         
-We design robust perception pipelines capable of processing complex visual data in real-time. Our solutions leverage OpenCV and modern deep learning frameworks to implement object detection, semantic segmentation, and Simultaneous Localization and Mapping (SLAM). This allows autonomous systems to intelligently interact with dynamic environments.`
+The studio designs robust perception pipelines capable of processing complex visual data in real-time. Solutions leverage OpenCV and modern deep learning frameworks to implement object detection, semantic segmentation, and Simultaneous Localization and Mapping (SLAM), allowing autonomous systems to intelligently interact with dynamic environments.`
     },
     {
         id: 5,
@@ -53,7 +53,7 @@ We design robust perception pipelines capable of processing complex visual data 
         icon: <Compass className="w-8 h-8 text-primary" />,
         content: `Implementing precise movement and intelligent trajectory planning.
         
-Our navigation solutions enable robots to move autonomously from point A to B while avoiding dynamic obstacles. We develop advanced state estimation filters (like EKFs) algorithms, global/local path planners, and sophisticated feedback control loops (such as PID and Model Predictive Control) to ensure smooth, accurate, and safe physical execution.`
+Navigation solutions enable robots to move autonomously from point A to B while avoiding dynamic obstacles. Expertise includes developing advanced state estimation filters (like EKFs), global/local path planners, and sophisticated feedback control loops (such as PID and Model Predictive Control) to ensure smooth, accurate, and safe physical execution.`
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ Our navigation solutions enable robots to move autonomously from point A to B wh
         icon: <LayoutDashboard className="w-8 h-8 text-primary" />,
         content: `Bringing disparate hardware and software components together seamlessly.
         
-A robot is more than the sum of its parts. We specialize in the complex task of integrating various sensors, intelligent actuators, custom PCBs, and high-performance compute units. We resolve communication bottlenecks, power distribution challenges, and software incompatibilities to deliver a unified, highly reliable robotic system.`
+A robot is more than the sum of its parts. Edge Robotics Studio specializes in the complex task of integrating various sensors, intelligent actuators, custom PCBs, and high-performance compute units. Communication bottlenecks, power distribution challenges, and software incompatibilities are resolved to deliver a unified, highly reliable robotic system.`
     },
     {
         id: 7,
@@ -73,7 +73,7 @@ A robot is more than the sum of its parts. We specialize in the complex task of 
         icon: <CircuitBoard className="w-8 h-8 text-primary" />,
         content: `Designing the electrical foundation of your robotic systems.
         
-We provide end-to-end custom Printed Circuit Board (PCB) design using industry-standard tools like Altium and KiCad. Our services include thorough schematic capture, meticulous layout routing for high-speed signals, power supply design, and strict adherence to EMI/EMC best practices to ensure your hardware is robust and interference-free.`
+Custom Printed Circuit Board (PCB) design is provided using industry-standard tools like Altium and KiCad. Services include thorough schematic capture, meticulous layout routing for high-speed signals, power supply design, and strict adherence to EMI/EMC best practices to ensure hardware is robust and interference-free.`
     },
     {
         id: 8,
@@ -83,7 +83,7 @@ We provide end-to-end custom Printed Circuit Board (PCB) design using industry-s
         icon: <Box className="w-8 h-8 text-primary" />,
         content: `Engineering the physical structure and moving parts of your robots.
         
-Using professional CAD software like SolidWorks and Fusion 360, we create detailed 3D models and parametric assemblies. We design with manufacturing in mind (Design For Manufacturing - DFM), ensuring that our mechanical structures are not only durable and lightweight but also cost-effective to produce and assemble.`
+Using professional CAD software like SolidWorks and Fusion 360, the studio creates detailed 3D models and parametric assemblies. Designs are developed with manufacturing in mind (Design For Manufacturing - DFM), ensuring that mechanical structures are not only durable and lightweight but also cost-effective to produce and assemble.`
     },
     {
         id: 9,
@@ -93,7 +93,7 @@ Using professional CAD software like SolidWorks and Fusion 360, we create detail
         icon: <ShieldCheck className="w-8 h-8 text-primary" />,
         content: `Ensuring unparalleled reliability through rigorous hardware and software validation.
         
-We conduct comprehensive testing at every stage of development. From initial hardware bring-up using oscilloscopes and logic analyzers, to advanced Software-in-the-Loop (SIL) and Hardware-in-the-Loop (HIL) testing, we meticulously identify and resolve bugs to guarantee your system operates flawlessly in the field.`
+Comprehensive testing is conducted at every stage of development. From initial hardware bring-up using oscilloscopes and logic analyzers to advanced Software-in-the-Loop (SIL) and Hardware-in-the-Loop (HIL) testing, the studio meticulously identifies and resolves bugs to guarantee system operation is flawless in the field.`
     },
     {
         id: 10,
@@ -103,7 +103,7 @@ We conduct comprehensive testing at every stage of development. From initial har
         icon: <Cloud className="w-8 h-8 text-primary" />,
         content: `Streamlining the robotics software development lifecycle.
         
-Robotics software is complex. We implement modern DevOps practices tailored for robotics, including robust Continuous Integration/Continuous Deployment (CI/CD) pipelines. By utilizing Dockerized build environments, structured version control workflows, and automated regression testing, we ensure reliable, repeatable, and fast software releases.`
+Robotics software is complex. The studio implements modern DevOps practices tailored for robotics, including robust Continuous Integration/Continuous Deployment (CI/CD) pipelines. By utilizing Dockerized build environments, structured version control workflows, and automated regression testing, reliable, repeatable, and fast software releases are ensured.`
     },
     {
         id: 11,
@@ -113,7 +113,7 @@ Robotics software is complex. We implement modern DevOps practices tailored for 
         icon: <Wrench className="w-8 h-8 text-primary" />,
         content: `Accelerating the journey from concept to physical reality.
         
-We leverage rapid manufacturing technologies like high-resolution 3D printing and quick-turn CNC machining to rapidly produce physical prototypes. This allows for fast iteration cycles on both mechanical enclosures and structural components, enabling you to physically test form, fit, and function earlier in the design process.`
+Rapid manufacturing technologies like high-resolution 3D printing and quick-turn CNC machining are leveraged to produce physical prototypes. This allows for fast iteration cycles on both mechanical enclosures and structural components, enabling physical testing of form, fit, and function earlier in the design process.`
     },
     {
         id: 12,
@@ -123,7 +123,7 @@ We leverage rapid manufacturing technologies like high-resolution 3D printing an
         icon: <FileText className="w-8 h-8 text-primary" />,
         content: `Creating the crucial knowledge base for your system's long-term success.
         
-Good engineering requires good documentation. We produce clear, comprehensive technical documentation including system architecture diagrams, detailed API references, and step-by-step developer guides. This ensures that your team can easily understand, maintain, and expand upon the systems we build.`
+Good engineering requires good documentation. Edge Robotics Studio produces clear, comprehensive technical documentation including system architecture diagrams, detailed API references, and step-by-step developer guides. This ensures that any team can easily understand, maintain, and expand upon the systems built.`
     },
     {
         id: 13,
