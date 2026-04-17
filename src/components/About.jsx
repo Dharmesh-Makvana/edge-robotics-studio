@@ -17,7 +17,7 @@ const About = () => {
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">About</span>
                             </h1>
                             <p className="text-xl text-primary font-medium mb-8 leading-snug text-justify">
-                                Edge Robotics Studio is a robotics and embedded systems engineering studio founded by Dharmesh Makvana, focused on building real-world intelligent systems while empowering people to innovate through technology.
+                                Edge Robotics Studio is a robotics studio founded by Dharmesh Makvana, focused on building real-world intelligent systems while empowering people to innovate through technology.
                             </p>
                         </div>
                         <div className="space-y-6 text-gray-300 text-lg leading-relaxed shadow-sm text-justify">
