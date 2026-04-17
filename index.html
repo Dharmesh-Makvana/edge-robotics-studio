@@ -3,6 +3,16 @@
 
 <head>
   <meta charset="UTF-8" />
+  <script>
+    // Enforce HTTPS and WWW
+    (function () {
+      var host = window.location.hostname;
+      var protocol = window.location.protocol;
+      if (host === 'edgeroboticsstudio.com' || protocol === 'http:') {
+        window.location.replace('https://www.edgeroboticsstudio.com' + window.location.pathname + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
@@ -15,6 +25,18 @@
     content="Edge Robotics Studio, Robotics, ROS2, Embedded Systems, Computer Vision, AI, Automation, Gazebo, Simulation, PCB Design" />
   <meta name="author" content="Dharmesh Makvana" />
   <link id="canonical-link" rel="canonical" href="https://www.edgeroboticsstudio.com/" />
+  <script>
+    (function () {
+      var canonical = document.getElementById('canonical-link');
+      var path = window.location.pathname;
+      var finalPath = path;
+      // Ensure trailing slash for consistency with sitemap.xml
+      if (!finalPath.endsWith('/')) {
+        finalPath += '/';
+      }
+      canonical.setAttribute('href', 'https://www.edgeroboticsstudio.com' + finalPath);
+    })();
+  </script>
   <script>
     (function (l) {
       if (l.search[1] === 'p') {
@@ -32,18 +54,6 @@
         }
       }
     })(window.location);
-  </script>
-  <script>
-    (function () {
-      var canonical = document.getElementById('canonical-link');
-      var path = window.location.pathname;
-      var finalPath = path;
-      // Remove trailing slash for non-root paths only
-      if (finalPath.length > 1 && finalPath.endsWith('/')) {
-        finalPath = finalPath.slice(0, -1);
-      }
-      canonical.setAttribute('href', 'https://www.edgeroboticsstudio.com' + finalPath);
-    })();
   </script>
   <style>
     /* Final resort to hide the floating reCAPTCHA badge */

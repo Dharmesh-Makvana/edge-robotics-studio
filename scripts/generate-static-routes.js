@@ -38,7 +38,6 @@ async function generateStaticRoutes() {
 
     // Clean up route path
     if (routePath.startsWith('/')) routePath = routePath.substring(1);
-    if (routePath.endsWith('/')) routePath = routePath.slice(0, -1);
 
     const targetDir = path.join(DIST_DIR, routePath);
     const targetFile = path.join(targetDir, 'index.html');
