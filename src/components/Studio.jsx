@@ -70,8 +70,8 @@ const Studio = () => {
                                 transition={{ delay: index * 0.05 }}
                                 className="group relative bg-slate-800/50 rounded-3xl border border-slate-700 overflow-hidden hover:border-primary/50 transition-all duration-500 flex flex-col h-full"
                             >
-                                <Link to={`/projects/${project.slug}`} className="block h-full">
-                                    <div className="relative h-64 overflow-hidden">
+                                <Link to={`/projects/${project.slug}`} className="flex flex-col h-full">
+                                    <div className="relative h-80 sm:h-96 overflow-hidden">
                                         <img
                                             src={project.image}
                                             alt={project.title}
