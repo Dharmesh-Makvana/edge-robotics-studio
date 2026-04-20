@@ -44,7 +44,7 @@ const Projects = () => {
                         >
                             <Link to={`/projects/${project.slug}`} className="block h-full">
                                 {/* Project Image */}
-                                <div className="relative h-80 sm:h-96 overflow-hidden">
+                                <div className="relative h-[400px] sm:h-[500px] overflow-hidden">
                                     <img
                                         src={project.image}
                                         alt={project.title}

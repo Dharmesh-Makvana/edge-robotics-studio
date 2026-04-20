@@ -71,7 +71,7 @@ const Studio = () => {
                                 className="group relative bg-slate-800/50 rounded-3xl border border-slate-700 overflow-hidden hover:border-primary/50 transition-all duration-500 flex flex-col h-full"
                             >
                                 <Link to={`/projects/${project.slug}`} className="block h-full">
-                                    <div className="relative h-64 overflow-hidden">
+                                    <div className="relative h-[400px] sm:h-[500px] overflow-hidden">
                                         <img
                                             src={project.image}
                                             alt={project.title}
