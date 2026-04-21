@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { blogPosts } from "../data/blogData";
-import { Calendar, ChevronLeft, User } from "lucide-react";
+import { Calendar, ChevronLeft, User, Lightbulb } from "lucide-react";
 const BlogPost = () => {
     const { slug } = useParams();
     const post = blogPosts.find((p) => p.slug === slug);
@@ -44,14 +44,48 @@ const BlogPost = () => {
                                     </h2>
                                 );
                             }
+                            if (item.type === "subheading") {
+                                return (
+                                    <h3 key={index} className="text-xl font-semibold text-gray-200 mt-8 mb-4">
+                                        {item.text}
+                                    </h3>
+                                );
+                            }
                             if (item.type === "image") {
                                 return (
                                     <div key={index} className="my-12 flex justify-center">
                                         <img
                                             src={item.src}
-                                            alt="Blog content"
+                                            alt={item.alt || "Blog content"}
                                             className="max-h-[500px] w-auto rounded-3xl shadow-2xl border border-slate-700/50 object-cover"
                                         />
+                                    </div>
+                                );
+                            }
+                            if (item.type === "callout") {
+                                return (
+                                    <div key={index} className="my-8 p-6 rounded-2xl bg-sky-500/10 border border-sky-500/30 backdrop-blur-sm">
+                                        <div className="flex items-start gap-3">
+                                            <Lightbulb className="w-5 h-5 text-sky-400 mt-1 flex-shrink-0" />
+                                            <p className="text-sky-100 text-base leading-relaxed italic">
+                                                {item.text}
+                                            </p>
+                                        </div>
+                                    </div>
+                                );
+                            }
+                            if (item.type === "diagram") {
+                                const DiagramComponent = item.component;
+                                return (
+                                    <div key={index} className="my-12 flex justify-center">
+                                        <div className="w-full max-w-2xl rounded-3xl shadow-2xl border border-slate-700/50 overflow-hidden bg-slate-800/60 backdrop-blur-sm">
+                                            <DiagramComponent />
+                                            {item.caption && (
+                                                <p className="text-center text-sm text-gray-400 py-3 px-4 border-t border-slate-700/50">
+                                                    {item.caption}
+                                                </p>
+                                            )}
+                                        </div>
                                     </div>
                                 );
                             }
