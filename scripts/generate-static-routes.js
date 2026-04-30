@@ -22,7 +22,7 @@ async function generateStaticRoutes() {
 
   const sitemapContent = fs.readFileSync(SITEMAP_PATH, 'utf-8');
   const locs = sitemapContent.match(/<loc>(.*?)<\/loc>/g) || [];
-  
+
   const urls = locs.map(loc => loc.replace(/<\/?loc>/g, '').trim());
   const domain = 'https://www.edgeroboticsstudio.com';
 
@@ -30,9 +30,9 @@ async function generateStaticRoutes() {
 
   for (const url of urls) {
     if (!url.startsWith(domain)) continue;
-    
+
     let routePath = url.replace(domain, '');
-    
+
     // Skip root and external links
     if (routePath === '' || routePath === '/') continue;
 
@@ -48,7 +48,21 @@ async function generateStaticRoutes() {
       fs.mkdirSync(targetDir, { recursive: true });
     }
 
-    fs.copyFileSync(INDEX_HTML_PATH, targetFile);
+    let htmlContent = fs.readFileSync(INDEX_HTML_PATH, 'utf-8');
+
+    // Ensure the URL has a trailing slash for consistency
+    let canonicalUrl = url;
+    if (!canonicalUrl.endsWith('/')) {
+      canonicalUrl += '/';
+    }
+
+    // Replace the canonical link
+    htmlContent = htmlContent.replace(
+      /<link id="canonical-link" rel="canonical" href="https:\/\/www\.edgeroboticsstudio\.com\/" \/>/,
+      `<link id="canonical-link" rel="canonical" href="${canonicalUrl}" />`
+    );
+
+    fs.writeFileSync(targetFile, htmlContent);
   }
 
   console.log('Static route generation complete!');
