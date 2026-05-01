@@ -6,10 +6,12 @@ import Comments from "./Comments";
 const BlogPost = () => {
     const { slug } = useParams();
     const post = blogPosts.find((p) => p.slug === slug);
-    if (!post) {
+    if (!post || post.disableLink) {
         return (
             <div className="pt-32 pb-24 min-h-screen bg-background text-white flex flex-col items-center justify-center">
-                <h1 className="text-2xl font-bold mb-4">Post not found</h1>
+                <h1 className="text-2xl font-bold mb-4">
+                    {post?.disableLink ? "Content Coming Soon" : "Post not found"}
+                </h1>
                 <Link to="/blog/" className="text-primary hover:underline flex items-center gap-2">
                     <ChevronLeft className="w-4 h-4" />
                     Back to Blog
