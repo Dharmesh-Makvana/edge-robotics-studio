@@ -112,5 +112,9 @@
     <loc>https://www.edgeroboticsstudio.com/blog/dragonfly-toys-to-drone-flight/</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://www.edgeroboticsstudio.com/blog/stepping-back-moving-forward/</loc>
+    <priority>0.6</priority>
+  </url>
 
 </urlset>
