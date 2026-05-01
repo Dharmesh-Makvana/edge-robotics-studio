@@ -91,7 +91,7 @@ const Blog = () => {
                                         <h2 className={`text-xl font-bold mb-3 transition-colors group-hover:text-primary text-white`}>
                                             {post.title}
                                         </h2>
-                                        <p className="text-gray-400 text-sm mb-6 line-clamp-3">
+                                        <p className="text-gray-400 text-sm mb-6">
                                             {post.excerpt}
                                         </p>
                                         {!post.disableLink && (
