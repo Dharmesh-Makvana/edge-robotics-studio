@@ -60,9 +60,9 @@ const Blog = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: (index * 0.1) }}
-                                    className={`relative bg-surface/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-slate-700/80 flex flex-col h-full transition-all duration-300 ${!post.disableLink
-                                        ? "group hover:-translate-y-2 hover:shadow-[0_15px_40px_-15px_rgba(14,165,233,0.2)] hover:border-primary/40"
-                                        : "group cursor-default"
+                                    className={`relative bg-surface/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-slate-700/80 flex flex-col h-full transition-all duration-300 group ${!post.disableLink
+                                        ? "hover:-translate-y-2 hover:shadow-[0_15px_40px_-15px_rgba(14,165,233,0.2)] hover:border-primary/40"
+                                        : "cursor-default hover:-translate-y-1 hover:border-slate-600"
                                         }`}
                                 >
                                     {post.disableLink && !post.hideComingSoon && (
@@ -79,7 +79,7 @@ const Blog = () => {
                                         <img
                                             src={post.coverImage}
                                             alt={post.title}
-                                            className={`w-full h-full object-cover transition-transform duration-500 ${!post.disableLink ? "group-hover:scale-110" : ""} ${post.imagePosition || 'object-center'}`}
+                                            className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${post.imagePosition || 'object-center'}`}
                                         />
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
                                     </div>
@@ -88,7 +88,7 @@ const Blog = () => {
                                             <Calendar className="w-4 h-4" />
                                             <span>{post.date}</span>
                                         </div>
-                                        <h2 className={`text-xl font-bold mb-3 transition-colors ${!post.disableLink ? "group-hover:text-primary" : "text-gray-400"}`}>
+                                        <h2 className={`text-xl font-bold mb-3 transition-colors group-hover:text-primary text-white`}>
                                             {post.title}
                                         </h2>
                                         <p className="text-gray-400 text-sm mb-6 line-clamp-3">
@@ -98,6 +98,12 @@ const Blog = () => {
                                             <span className="inline-flex items-center gap-2 text-white font-medium group-hover:text-primary transition-colors mt-auto">
                                                 Read More
                                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </span>
+                                        )}
+                                        {post.disableLink && (
+                                            <span className="inline-flex items-center gap-2 text-gray-500 font-medium mt-auto">
+                                                Coming Soon
+                                                <ArrowRight className="w-4 h-4 opacity-50" />
                                             </span>
                                         )}
                                     </div>
