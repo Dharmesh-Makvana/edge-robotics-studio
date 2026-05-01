@@ -11,7 +11,9 @@ const Blog = () => {
         { name: "Personal", icon: <UserCircle size={18} /> }
     ];
     const [activeCategory, setActiveCategory] = useState("Edge Robotics Studio");
-    const categoryPosts = blogPosts.filter(post => post.category === activeCategory);
+    const categoryPosts = blogPosts
+        .filter(post => post.category === activeCategory)
+        .filter(post => post.slug !== "dragonfly-toys-to-drone-flight");
     return (
         <div className="pt-32 pb-24 min-h-screen bg-slate-900 border-b border-slate-800 text-white relative overflow-hidden">
             {/* Background Orbs */}
