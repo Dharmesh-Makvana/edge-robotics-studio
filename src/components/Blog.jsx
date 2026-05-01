@@ -62,9 +62,7 @@ const Blog = () => {
                                     transition={{ delay: (index * 0.1) }}
                                     className={`relative bg-surface/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-slate-700/80 flex flex-col h-full transition-all duration-300 ${!post.disableLink
                                         ? "group hover:-translate-y-2 hover:shadow-[0_15px_40px_-15px_rgba(14,165,233,0.2)] hover:border-primary/40"
-                                        : post.hideComingSoon
-                                            ? "group cursor-default"
-                                            : "opacity-60 grayscale-[0.5]"
+                                        : "group cursor-default"
                                         }`}
                                 >
                                     {post.disableLink && !post.hideComingSoon && (
