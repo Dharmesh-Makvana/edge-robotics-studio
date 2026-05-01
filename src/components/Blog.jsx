@@ -84,14 +84,14 @@ const Blog = () => {
                                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
                                     </div>
                                     <div className="p-6 flex flex-col flex-1">
-                                        <div className="flex items-center gap-2 text-primary text-sm mb-3">
+                                        <div className="flex items-center gap-2 text-primary text-sm mb-2">
                                             <Calendar className="w-4 h-4" />
                                             <span>{post.date}</span>
                                         </div>
-                                        <h2 className={`text-xl font-bold mb-3 transition-colors group-hover:text-primary text-white`}>
+                                        <h2 className="text-xl font-bold mb-2 transition-colors group-hover:text-primary text-white line-clamp-2 min-h-[3.5rem]">
                                             {post.title}
                                         </h2>
-                                        <p className="text-gray-400 text-sm mb-6 text-justify">
+                                        <p className="text-gray-400 text-sm mb-4 text-justify line-clamp-3 min-h-[3.75rem]">
                                             {post.excerpt}
                                         </p>
                                         {!post.disableLink && (
