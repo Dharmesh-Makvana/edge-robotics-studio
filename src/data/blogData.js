@@ -6,6 +6,6 @@ import { steppingBackPost } from "./posts/steppingBack";
 export const blogPosts = [
     whoIAmPost,
     oneYearPost,
-    droneDynamicsPost,
+    // droneDynamicsPost,
     steppingBackPost
 ];
