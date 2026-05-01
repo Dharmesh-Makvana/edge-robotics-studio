@@ -100,7 +100,7 @@ const Blog = () => {
                                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                             </span>
                                         )}
-                                        {post.disableLink && (
+                                        {post.disableLink && !post.hideComingSoon && (
                                             <span className="inline-flex items-center gap-2 text-gray-500 font-medium mt-auto">
                                                 Coming Soon
                                                 <ArrowRight className="w-4 h-4 opacity-50" />
