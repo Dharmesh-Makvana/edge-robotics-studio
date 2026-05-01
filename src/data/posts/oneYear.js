@@ -8,6 +8,7 @@ export const oneYearPost = {
     author: "Edge Robotics Studio",
     category: "Edge Robotics Studio",
     disableLink: true,
+    hideComingSoon: true,
     imageAspectRatio: "aspect-square",
     excerpt: "Celebrating exactly one year of robotics design, innovation, and learning at Edge Robotics Studio.",
     coverImage: oneYearCompletionImage,

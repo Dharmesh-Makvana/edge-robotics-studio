@@ -12,8 +12,7 @@ const Blog = () => {
     ];
     const [activeCategory, setActiveCategory] = useState("Edge Robotics Studio");
     const categoryPosts = blogPosts
-        .filter(post => post.category === activeCategory)
-        .filter(post => post.slug !== "dragonfly-toys-to-drone-flight");
+        .filter(post => post.category === activeCategory);
     return (
         <div className="pt-32 pb-24 min-h-screen bg-slate-900 border-b border-slate-800 text-white relative overflow-hidden">
             {/* Background Orbs */}
@@ -63,10 +62,12 @@ const Blog = () => {
                                     transition={{ delay: (index * 0.1) }}
                                     className={`relative bg-surface/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-slate-700/80 flex flex-col h-full transition-all duration-300 ${!post.disableLink
                                         ? "group hover:-translate-y-2 hover:shadow-[0_15px_40px_-15px_rgba(14,165,233,0.2)] hover:border-primary/40"
-                                        : "opacity-60 grayscale-[0.5]"
+                                        : post.hideComingSoon
+                                            ? "group cursor-default"
+                                            : "opacity-60 grayscale-[0.5]"
                                         }`}
                                 >
-                                    {post.disableLink && (
+                                    {post.disableLink && !post.hideComingSoon && (
                                         <div className="absolute top-4 right-4 z-20 bg-slate-800/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-700 text-[10px] font-bold uppercase tracking-widest text-primary shadow-lg">
                                             Coming Soon
                                         </div>
