@@ -70,7 +70,7 @@ const BlogPost = () => {
                                     <div key={index} className="my-8 p-6 rounded-2xl bg-sky-500/10 border border-sky-500/30 backdrop-blur-sm">
                                         <div className="flex items-start gap-3">
                                             <Lightbulb className="w-5 h-5 text-sky-400 mt-1 flex-shrink-0" />
-                                            <p className="text-sky-100 text-base leading-relaxed italic">
+                                            <p className={`text-sky-100 text-base leading-relaxed italic ${(post.category === 'Personal' || post.category === 'Technical') ? 'text-justify' : ''}`}>
                                                 {item.text}
                                             </p>
                                         </div>
@@ -93,7 +93,7 @@ const BlogPost = () => {
                                 );
                             }
                             return (
-                                <p key={index} className={`text-gray-300 text-lg leading-relaxed ${post.category === 'Personal' ? 'text-justify' : ''}`}>
+                                <p key={index} className={`text-gray-300 text-lg leading-relaxed ${(post.category === 'Personal' || post.category === 'Technical') ? 'text-justify' : ''}`}>
                                     {item.text}
                                 </p>
                             );
