@@ -42,7 +42,7 @@ const Projects = () => {
                             transition={{ delay: index * 0.1 }}
                             className="group relative bg-slate-800/50 rounded-3xl border border-slate-700 overflow-hidden hover:border-primary/50 transition-all duration-500"
                         >
-                            <Link to={`/projects/${project.slug}`} className="block h-full">
+                            <Link to={`/projects/${project.slug}/`} className="block h-full">
                                 {/* Project Image */}
                                 <div className="relative h-[400px] sm:h-[500px] overflow-hidden">
                                     <img

@@ -62,6 +62,26 @@ async function generateStaticRoutes() {
       `<link id="canonical-link" rel="canonical" href="${canonicalUrl}" />`
     );
 
+    // Create a dynamic title and description based on the route
+    const segments = routePath.split('/').filter(Boolean);
+    if (segments.length > 0) {
+      const titleSegments = segments.map(segment => {
+        return segment.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+      });
+      const pageTitle = titleSegments.reverse().join(' - ') + 'Edge Robotics Studio';
+      const pageDescription = `Learn more about ${titleSegments.join(' ')} at Edge Robotics Studio. Specializing in ROS2, Embedded Systems, Computer Vision, and AI.`;
+
+      htmlContent = htmlContent.replace(
+        /<title>Edge Robotics Studio<\/title>/,
+        `<title>${pageTitle}</title>`
+      );
+
+      htmlContent = htmlContent.replace(
+        /<meta name="description"[\s\S]*?content="[^"]*" \/>/,
+        `<meta name="description" content="${pageDescription}" />`
+      );
+    }
+
     fs.writeFileSync(targetFile, htmlContent);
   }
 

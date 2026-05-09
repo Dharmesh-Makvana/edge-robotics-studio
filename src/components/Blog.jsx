@@ -71,7 +71,7 @@ const Blog = () => {
                                         </div>
                                     )}
                                     {!post.disableLink && (
-                                        <Link to={`/blog/${post.slug}`} className="absolute inset-0 z-10">
+                                        <Link to={`/blog/${post.slug}/`} className="absolute inset-0 z-10">
                                             <span className="sr-only">Read Post</span>
                                         </Link>
                                     )}

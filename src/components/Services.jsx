@@ -36,7 +36,7 @@ const Services = () => {
                             transition={{ delay: index * 0.1 }}
                             className="relative bg-surface p-8 rounded-2xl border border-slate-700 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_-10px_rgba(14,165,233,0.15)] group flex flex-col h-full"
                         >
-                            <Link to={`/services/${service.slug}`} className="absolute inset-0 z-10">
+                            <Link to={`/services/${service.slug}/`} className="absolute inset-0 z-10">
                                 <span className="sr-only">View Service</span>
                             </Link>
                             <div className="mb-6 p-4 bg-slate-800 rounded-xl w-fit group-hover:bg-primary group-hover:text-white transition-colors duration-300">
