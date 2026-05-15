@@ -21,23 +21,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edge Robotics Studio</title>
   <meta name="description"
-    content="An independent robotics studio founded by DharmeshMakvana, specializing in ROS2, Embedded Systems, Computer Vision, and AI." />
+    content="An independent robotics studio founded by Dharmesh Makvana, specializing in ROS2, Embedded Systems, Computer Vision, and AI." />
   <meta name="keywords"
     content="Edge Robotics Studio, Robotics, ROS2, Embedded Systems, Computer Vision, AI, Automation, Gazebo, Simulation, PCB Design" />
   <meta name="author" content="Dharmesh Makvana" />
   <link id="canonical-link" rel="canonical" href="https://www.edgeroboticsstudio.com/" />
-  <script>
-    (function () {
-      var canonical = document.getElementById('canonical-link');
-      var path = window.location.pathname;
-      var finalPath = path;
-      // Ensure trailing slash for consistency with sitemap.xml
-      if (!finalPath.endsWith('/')) {
-        finalPath += '/';
-      }
-      canonical.setAttribute('href', 'https://www.edgeroboticsstudio.com' + finalPath);
-    })();
-  </script>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.edgeroboticsstudio.com/" />
+  <meta property="og:title" content="Edge Robotics Studio" />
+  <meta property="og:description" content="An independent robotics studio specializing in ROS2, Embedded Systems, Computer Vision, and AI." />
+  <meta property="og:image" content="https://www.edgeroboticsstudio.com/favicon-512x512.png" />
+  <meta property="og:site_name" content="Edge Robotics Studio" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Edge Robotics Studio" />
+  <meta name="twitter:description" content="An independent robotics studio specializing in ROS2, Embedded Systems, Computer Vision, and AI." />
+  <meta name="twitter:image" content="https://www.edgeroboticsstudio.com/favicon-512x512.png" />
   <script>
     (function (l) {
       if (l.search[1] === 'p') {
@@ -70,20 +70,7 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script>
-    // Robustly hide the reCAPTCHA badge if CSS fails to override injected styles
-    (function () {
-      setInterval(function () {
-        var badge = document.querySelector('.grecaptcha-badge');
-        if (badge) {
-          badge.style.visibility = 'hidden';
-          badge.style.display = 'none';
-          badge.style.opacity = '0';
-          badge.style.pointerEvents = 'none';
-        }
-      }, 500);
-    })();
-  </script>
+  <!-- reCAPTCHA badge is hidden via CSS above; inline disclaimer shown in Contact form per Google ToS -->
 </body>
 
 </html>

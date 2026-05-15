@@ -100,14 +100,14 @@ const Contact = () => {
             <div className="hidden md:block absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -ml-48 -mb-48"></div>
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-                    <motion.h2
+                    <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-6 tracking-tight"
                     >
                         Get in Touch
-                    </motion.h2>
+                    </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -250,7 +250,7 @@ const Contact = () => {
                                 {status !== "submitting" && <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
                             </button>
 
-                            <p className="text-[10px] text-gray-500 text-center mt-4">
+                            <p className="text-xs text-gray-400 text-center mt-4">
                                 This site is protected by reCAPTCHA and the Google{' '}
                                 <a href="https://policies.google.com/privacy" className="underline hover:text-primary transition-colors">Privacy Policy</a> and{' '}
                                 <a href="https://policies.google.com/terms" className="underline hover:text-primary transition-colors">Terms of Service</a> apply.

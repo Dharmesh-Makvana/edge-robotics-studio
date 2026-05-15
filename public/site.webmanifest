@@ -1,6 +1,8 @@
 {
     "name": "Edge Robotics Studio",
     "short_name": "Edge Robotics",
+    "start_url": "/",
+    "scope": "/",
     "icons": [
         {
             "src": "/favicon-192x192.png",

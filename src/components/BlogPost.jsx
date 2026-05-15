@@ -59,7 +59,7 @@ const BlogPost = () => {
                                     <div key={index} className="my-12 flex justify-center">
                                         <img
                                             src={item.src}
-                                            alt={item.alt || "Blog content"}
+                                            alt={item.alt || `Image from: ${post.title}`}
                                             className="max-h-[500px] w-auto rounded-3xl shadow-2xl border border-slate-700/50 object-cover"
                                         />
                                     </div>
